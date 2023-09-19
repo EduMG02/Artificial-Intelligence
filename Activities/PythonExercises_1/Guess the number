@@ -1,0 +1,16 @@
+import random
+
+target = random.randint(1, 100)
+
+print("Guess the number I´m thinking :3")
+#print(target)
+
+while True:
+  guess = int(input("Enter your guess: "))
+  if guess == target:
+    print(f"Congratulations! The number was: {target} ")
+    break
+  elif guess < target:
+    print("The number is higher. Try again.")
+  else:
+    print("The number is lower. Try again.")
